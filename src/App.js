@@ -16,16 +16,20 @@ class App extends Component {
     this.setState({outputText: salida});
   }
 
+  outputHandler = () => {
+
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1>Traductor a Burlativo</h1>
         </header>
-        <body className="content">
+        <div className="content">
           <TextInput changed={this.updateOutputHandler} />
-          <TextOutput salida={this.state.outputText} changed={null}/>
-        </body>
+          <TextOutput salida={this.state.outputText} changed={this.outputHandler}/>
+        </div>
         <footer className="App-footer">
           <h6>Powered by <a href="http://github.com/leanuy"><strong>lenny</strong></a> &#x1F49A;</h6>
         </footer>        

@@ -1,5 +1,13 @@
 .outputBox {
-    /* display: inline-block;
-    float: left; */
+
+    display: left;
     margin: 5px 5px 5px 5px;
+}
+
+.copy-button {
+    margin: 10px;
+}
+
+.titulo-salida {
+    margin-left: 25%;
 }

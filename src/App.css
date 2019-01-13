@@ -1,5 +1,9 @@
 .App {
   /* align-items: center; */
+  background-color: rgb(84, 192, 80);
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
 }
 
 .App-header {
@@ -11,6 +15,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex: none;
 }
 
 .App-footer {
@@ -24,13 +29,22 @@
   color: rgb(83, 177, 29);
   position:absolute;
   bottom:0;
-  width: 100%
+  width: 100%;
+  flex: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
   align-content: center;
   display: flex;
   background-color: rgb(84, 192, 80);
-  height: 100%;
-  margin: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 25%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
 }
