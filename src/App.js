@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import TextInput from './TextInput/TextInput';
 import TextOutput from './TextOutput/TextOutput';
+import {ToastContainer, ToastStore} from 'react-toasts';
 
 class App extends Component {
   state = {
@@ -20,6 +21,10 @@ class App extends Component {
 
   };
 
+  onCopyHandler = () => {
+    alert("Texto Copiado");
+  };
+
   render() {
     return (
       <div className="App">
@@ -28,7 +33,7 @@ class App extends Component {
         </header>
         <div className="content">
           <TextInput changed={this.updateOutputHandler} />
-          <TextOutput salida={this.state.outputText} changed={this.outputHandler}/>
+          <TextOutput salida={this.state.outputText} changed={this.outputHandler} copiado={this.onCopyHandler}/>
         </div>
         <footer className="App-footer">
           <h6>Powered by <a href="http://github.com/leanuy"><strong>lenny</strong></a> &#x1F49A;</h6>

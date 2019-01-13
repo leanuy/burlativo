@@ -1,16 +1,16 @@
 import React from 'react';
-import './TextOutput.css'
+import './TextOutput.css';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-const copyToClipboard = () => {
-    console.log("copiar");
-};
 
 const textOuput = (props) => {
     return (
         <div className="outputBox">
             <h2 className="titulo-salida">:::Burlese:::</h2>
-            <textarea rows="4" cols="50" value={props.salida} onChange={props.changed} />
-            <button className="copy-button" onClick={copyToClipboard}>Copiar</button>
+            <textarea rows="30" cols="50" value={props.salida} onChange={props.changed} />
+            <CopyToClipboard onCopy={props.copiado} text={props.salida}>
+                <button className="copy-button">Copiar</button>
+            </CopyToClipboard>
         </div>
     );
 };
