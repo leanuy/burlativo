@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import TextInput from './TextInput/TextInput';
 import TextOutput from './TextOutput/TextOutput';
-import {ToastContainer, ToastStore} from 'react-toasts';
 
 class App extends Component {
   state = {
@@ -17,27 +16,23 @@ class App extends Component {
     this.setState({outputText: salida});
   }
 
-  outputHandler = () => {
-
-  };
-
   onCopyHandler = () => {
     alert("Texto Copiado");
   };
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Traductor a Burlativo</h1>
-        </header>
-        <div className="content">
-          <TextInput changed={this.updateOutputHandler} />
-          <TextOutput salida={this.state.outputText} changed={this.outputHandler} copiado={this.onCopyHandler}/>
-        </div>
-        <footer className="App-footer">
-          <h6>Powered by <a href="http://github.com/leanuy"><strong>lenny</strong></a> &#x1F49A;</h6>
-        </footer>        
+      <div className="container">
+          <div className="header">
+            <h1>Traductor a Burlativo</h1>
+          </div>
+          <div className="main-content">
+            <TextInput changed={this.updateOutputHandler} />
+            <TextOutput salida={this.state.outputText} copiado={this.onCopyHandler}/>
+          </div>
+          <div className="footer">
+            <h5>Powered by <a href="http://github.com/leanuy"><strong>Lenny</strong></a> &#x1F49A;</h5>
+          </div>  
       </div>
     );
   }

@@ -1,13 +1,14 @@
 .outputBox {
-
-    display: left;
+    display: grid;
     margin: 5px 5px 5px 5px;
 }
 
 .copy-button {
-    margin: 10px;
-}
-
-.titulo-salida {
-    margin-left: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background-color: lightslategray;
+    border: 0;
 }

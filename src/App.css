@@ -1,50 +1,31 @@
-.App {
-  /* align-items: center; */
-  background-color: rgb(84, 192, 80);
-  margin: 0;
-  height: 100%;
-  min-height: 100%;
+.container {
+  text-align: center;
+  background-color: black;
+  font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  flex: none;
-}
-
-.App-footer {
-  background-color: #282c34;
-  min-height: 15vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(8px + 2vmin);
-  color: rgb(83, 177, 29);
-  position:absolute;
-  bottom:0;
+.main-content {
+  background-color: dimgray;
+  padding:0;
+  margin:0;
+  position: sticky;
   width: 100%;
-  flex: none;
-}
-body {
-  display: flex;
-  flex-direction: column;
+  height: max-content;
 }
 
-.content {
-  align-content: center;
-  display: flex;
-  background-color: rgb(84, 192, 80);
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 5px;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  flex: auto;
+.header {
+  color: aliceblue;
+  padding-top: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
+h5 {
+  color: aliceblue;
+  size: 10px;
 }

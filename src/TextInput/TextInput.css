@@ -1,4 +1,4 @@
 .inputBox {
-    float: right;
+    display: grid;
     margin: 5px 5px 5px 5px;
 }

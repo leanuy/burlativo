@@ -5,7 +5,7 @@ const textInput = (props) => {
     return (
         <div className="inputBox">
             <h2>Ingrese el texto...</h2>
-            <textarea rows="20" cols="50" value={props.input} onChange={props.changed}
+            <textarea rows="10" cols="50" value={props.input} onChange={props.changed}
                 placeholder="Ingrese el texto a burlarse" />
         </div>
     );
