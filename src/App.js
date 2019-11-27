@@ -23,16 +23,16 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-          <div className="header">
+          <header className="header">
             <h1>Traductor a Burlativo</h1>
-          </div>
-          <div className="main-content">
+          </header>
+          <article className="main-content">
             <TextInput changed={this.updateOutputHandler} />
             <TextOutput salida={this.state.outputText} copiado={this.onCopyHandler}/>
-          </div>
-          <div className="footer">
+          </article>
+          <footer className="footer">
             <h5>Powered by <a href="http://github.com/leanuy"><strong>Lenny</strong></a> &#x1F49A;</h5>
-          </div>  
+          </footer>  
       </div>
     );
   }

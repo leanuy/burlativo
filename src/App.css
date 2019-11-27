@@ -2,20 +2,18 @@
   text-align: center;
   background-color: black;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
   background-color: dimgray;
-  padding:0;
-  margin:0;
-  position: sticky;
-  width: 100%;
-  height: max-content;
+ 
 }
 
 .header {
   color: aliceblue;
-  padding-top: 5px;
+
 }
 
 .footer {
