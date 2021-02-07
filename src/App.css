@@ -2,8 +2,8 @@
   text-align: center;
   background-color: black;
   font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .main-content {
