@@ -1,39 +1,32 @@
 {
   "name": "burlativo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.7.0",
-    "react-copy-to-clipboard": "^5.0.2",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^2.1.3",
-    "react-toasts": "^2.0.14"
-  },
+  "type": "module",
+  "description": "Traductor a Burlativo. Ej: \"No me gustan las pasas de uva\" → \"Ni mi gistin lis pisis di ivi\"",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "description": "React app para traducir texto a burlativo.  Por ejemplo: \"No me gustan las pasas de uva en las empanadas\" --> \"Ni mi gistin lis pisis di ivi in lis impinidis\"",
-  "main": "index.js",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "vite": "^8.0.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leanuy/burlativo.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leanuy/burlativo/issues"
-  },
-  "homepage": "https://github.com/leanuy/burlativo#readme"
+  "author": "Leandro Rodriguez",
+  "license": "ISC"
 }
