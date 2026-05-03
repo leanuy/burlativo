@@ -1,5 +1,6 @@
 # Burlativo
 
+A fun text translator that converts all vowels to 'i' — a classic Spanish-language joke format.s
 Traductor de texto al idioma de la burla — todas las vocales se vuelven **i**.
 
 > "No me gustan las pasas de uva en las empanadas" → "Ni mi gistin lis pisis di ivi in lis impinidis"
